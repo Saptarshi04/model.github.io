@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@1,900&family=Poppins:wght@500&family=Work+Sans:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background: transparent;
+    padding: 2rem 4%;
+    /* position: fixed; */
+
+}
+
+.logo {
+    text-shadow: 1px 1px 2px rgb(183, 0, 255);
+    font-size: 1.9rem;
+    font-weight: 700;
+    color: rgba(166, 39, 216, 0.87);
+}
+
+nav {
+    margin-top: .6rem;
+    margin-left: 20rem;
+    font-weight: 500;
+}
+
+.navlist {
+    color: rgb(0, 0, 0);
+    margin-left: 2.2em;
+    font-size: 1.1rem;
+}
+
+#login {
+    cursor: pointer;
+    margin-left: 20rem;
+
+}
+
+#login:hover {
+    border: .2rem solid rgba(190, 16, 190, .8);
+    border-radius: 50%;
+    transition: .3s;
+}
+
+
+
+.navbar a {
+    position: relative;
+}
+
+.navlist.active,
+.navlist:hover {
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    color: black;
+    transition: .5s;
+    box-shadow: 0px 2px 0px rgba(110, 0, 253, 0.993);
+
+}
+
+
+body {
+    text-align: center;
+    background-color: white;
+
+
+}
+
+.heading {
+    font-size: 3rem;
+    color: blue;
+
+
+
+
+
+}
+
+.box {
+
+    background-color: blue;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    border-radius: 10px;
+    padding: 0 calc(min(3rem, 3vw)) calc(min(1.5rem, 2vw));
+    margin: 10px;
+    box-shadow: 0 2px 8px 0 rgba(105, 1, 114, .2);
+    color: white;
+
+    backdrop-filter: blur(5px);
+    border: .1px solid #2b3002;
+    display: inline-block;
+    height: 150px;
+    width: 150px;
+    box-shadow: 0 2px 8px 0 rgba(105, 1, 114, .2);
+    cursor: pointer;
+
+
+}
+
+.footer {
+    background-color: seagreen;
+    color: white;
+    position: relative;
+    justify-content: space-around;
+    display: flex;
+}
+
+div {
+    display: block;
+}
+
+@media screen and (max-width: 600px) {
+    .heading {
+        font-size: large;
+
+    }
+
+    .box {
+
+
+
+
+
+        border-radius: 5px;
+        padding: 0 calc(min(3rem, 3vw)) calc(min(1.5rem, 2vw));
+        margin: 3px;
+        box-shadow: 0 2px 8px 0 rgba(105, 1, 114, .2);
+        color: white;
+
+        backdrop-filter: blur(5px);
+        border: .1px solid #2b3002;
+        display: inline-block;
+        height: 100px;
+        width: 100px;
+        box-shadow: 0 2px 8px 0 rgba(105, 1, 114, .2);
+        cursor: pointer;
+    }
+
+
+}

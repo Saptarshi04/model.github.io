@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@1,900&family=Poppins:wght@500&family=Work+Sans:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background: transparent;
+    padding: 2rem 4%;
+    /* position: fixed; */
+
+}
+
+.logo {
+    text-shadow: 1px 1px 2px rgb(183, 0, 255);
+    font-size: 1.9rem;
+    font-weight: 700;
+    color: rgba(166, 39, 216, 0.87);
+}
+
+nav {
+    margin-top: .6rem;
+    margin-left: 20rem;
+    font-weight: 500;
+}
+
+.navlist {
+    color: rgb(0, 0, 0);
+    margin-left: 2.2em;
+    font-size: 1.1rem;
+}
+
+#login {
+    cursor: pointer;
+    margin-left: 20rem;
+
+}
+
+#login:hover {
+    border: .2rem solid rgba(190, 16, 190, .8);
+    border-radius: 50%;
+    transition: .3s;
+}
+
+
+
+.navbar a {
+    position: relative;
+}
+
+.navlist.active,
+.navlist:hover {
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    color: black;
+    transition: .5s;
+    box-shadow: 0px 2px 0px rgba(110, 0, 253, 0.993);
+
+}
+
+footer {
+    background-color: blueviolet;
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+}
+
+footer .handels {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    width: 50%;
+    overflow: hidden;
+}
+
+footer .cr {
+    width: 50%;
+    text-align: center;
+    color: aliceblue;
+}
+
+.handels>li {
+    padding: 18px;
+}
+
+@media (max-width:1000px) {
+    .pod-member {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width:700px) {
+    .pod-member {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width:400px) {
+    .pod-member {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
